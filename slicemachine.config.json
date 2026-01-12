@@ -1,0 +1,6 @@
+{
+  "repositoryName": "v0-non-profit-website-design-main",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"],
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}
