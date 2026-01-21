@@ -92,7 +92,7 @@ export function ImpactSection() {
         </div>
 
         {/* Gallery Preview / Action Section */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-foreground mb-2">Our Work in Action</h3>
             <p className="text-muted-foreground">Captured moments of change and hope in the communities we serve.</p>
@@ -108,7 +108,7 @@ export function ImpactSection() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -1,8 +1,11 @@
 "use client"
 
-import { Card, CardContent } from "@/components/ui/card"
-import { motion } from "framer-motion"
-import { User } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { User } from "lucide-react";
+import dhassarathane from "../images/Dhassarathane.jpeg";
+import dhanalakshmi from "../images/Dhanalakshmi.jpeg";
+import Image from "next/image";
 
 const leaders = [
   {
@@ -11,6 +14,7 @@ const leaders = [
       "Founder & President – Vilvam Foundation",
       "President – Exnora International Foundation, Villianur (UT Puducherry) Branch",
     ],
+    image: dhassarathane,
   },
   {
     name: "Dhanalakshmi",
@@ -18,6 +22,7 @@ const leaders = [
       "General Secretary – Exnora International Foundation, Villianur (UT Puducherry) Branch",
       "Treasurer – Vilvam Foundation",
     ],
+    image: dhanalakshmi,
   },
 ]
 
@@ -55,7 +60,13 @@ export function LeadershipSection() {
                 <CardContent className="p-8">
                   <div className="flex flex-col items-center text-center gap-6">
                     <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-105 transition-transform">
-                      <User className="w-16 h-16 text-primary" />
+                      <Image
+                        src={leader.image}
+                        alt={leader.name}
+                        width={128}
+                        height={128}
+                        className="rounded-full"
+                      />
                     </div>
                     <div className="space-y-3">
                       <h4 className="text-2xl font-bold text-foreground">{leader.name}</h4>
