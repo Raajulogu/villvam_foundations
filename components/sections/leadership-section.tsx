@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { User } from "lucide-react";
 import dhassarathane from "../images/Dhassarathane.jpeg";
 import dhanalakshmi from "../images/Dhanalakshmi.jpeg";
 import Image from "next/image";
@@ -11,16 +10,16 @@ const leaders = [
   {
     name: "Dassarathane. K",
     roles: [
-      "Founder & President – Vilvam Foundation",
-      "President – Exnora International Foundation, Villianur (UT Puducherry) Branch",
+      "Vilvam Foundation - Founder & President",
+      "President - Exnora International Foundation, Villianur (UT Puducherry) Branch",
     ],
     image: dhassarathane,
   },
   {
     name: "Dhanalakshmi",
     roles: [
-      "General Secretary – Exnora International Foundation, Villianur (UT Puducherry) Branch",
-      "Treasurer – Vilvam Foundation",
+      "Vilvam Foundation - Treasurer",
+      "General Secretary - Exnora International Foundation, Villianur (UT Puducherry) Branch",
     ],
     image: dhanalakshmi,
   },
