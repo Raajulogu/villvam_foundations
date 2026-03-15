@@ -1,6 +1,7 @@
 import * as prismic from "@prismicio/client";
+import sm from "../slicemachine.config.json";
 
-export const repositoryName = process.env.NEXT_PUBLIC_PRISMIC_REPO!;
+export const repositoryName = sm.repositoryName;
 
 export const createClient = () => {
   const client = prismic.createClient(repositoryName, {

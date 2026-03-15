@@ -7,25 +7,36 @@ import Link from "next/link"
 export function WhatsAppButton() {
   return (
     <motion.div
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ delay: 2, type: "spring", stiffness: 260, damping: 20 }}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1, y: [0, -4, 0] }}
+      transition={{
+        delay: 1,
+        type: "spring",
+        stiffness: 200,
+        damping: 15,
+        y: { repeat: Infinity, duration: 3 }
+      }}
       className="fixed bottom-6 right-6 z-[60]"
     >
       <Link
-        href="https://wa.me/yournumber?text=Hi, I would like to donate and support your social service."
+        href="https://wa.me/918838921064?text=Hi, I would like to support your social service."
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-3 bg-secondary hover:bg-accent text-white p-4 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.2)] transition-all group active:scale-95 border-2 border-white/20"
+        className="group relative flex items-center"
       >
-        <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 font-bold px-0 group-hover:px-2">
-          Chat with us
-        </span>
-        <MessageCircle className="w-8 h-8 fill-current" />
-        <span className="absolute -top-1 -right-1 flex h-4 w-4">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500"></span>
-        </span>
+        {/* Soft Pulse Glow */}
+        <span className="absolute h-14 w-14 rounded-full bg-[#25D366]/30 animate-ping"></span>
+
+        {/* Main Button */}
+        <div className="relative flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white pl-3 pr-4 py-3 rounded-full shadow-lg transition-all duration-300 group-hover:pr-6">
+
+          <MessageCircle className="w-5 h-5 fill-white" />
+
+          <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-[150px] transition-all duration-400 font-medium">
+            Chat on WhatsApp
+          </span>
+
+        </div>
       </Link>
     </motion.div>
   )
