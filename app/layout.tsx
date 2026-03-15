@@ -42,7 +42,6 @@ export const metadata: Metadata = {
         type: "image/svg+xml",
       },
     ],
-    apple: "/images/image.png",
   },
 }
 
