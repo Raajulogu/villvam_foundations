@@ -11,7 +11,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export default function Home() {
-  console.log("[v0] Rendering Home Page")
+  
   return (
     <main className="min-h-screen">
       <Navbar />
