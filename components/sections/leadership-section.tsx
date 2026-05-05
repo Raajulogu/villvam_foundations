@@ -18,7 +18,7 @@ const leaders = [
   {
     name: "Dhanalakshmi",
     roles: [
-      "Vilvam Foundation - Treasurer",
+      "Vilvam Foundation - General Secretary",
       "General Secretary - Exnora International Foundation, Villianur (UT Puducherry) Branch",
     ],
     image: dhanalakshmi,
